@@ -1,0 +1,104 @@
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Цифры</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="pixi.min.js"></script>
+</head>
+<body>
+	<div class="warning">
+		<div class="svg_container">
+			<svg xmlns:xlink="http://www.w3.org/1999/xlink" id="pleaserotate-graphic" viewBox="0 0 250 250">
+				<g id="pleaserotate-graphic-path">
+					<path d="M190.5,221.3c0,8.3-6.8,15-15,15H80.2c-8.3,0-15-6.8-15-15V28.7c0-8.3,6.8-15,15-15h95.3c8.3,0,15,6.8,15,15V221.3zM74.4,33.5l-0.1,139.2c0,8.3,0,17.9,0,21.5c0,3.6,0,6.9,0,7.3c0,0.5,0.2,0.8,0.4,0.8s7.2,0,15.4,0h75.6c8.3,0,15.1,0,15.2,0s0.2-6.8,0.2-15V33.5c0-2.6-1-5-2.6-6.5c-1.3-1.3-3-2.1-4.9-2.1H81.9c-2.7,0-5,1.6-6.3,4C74.9,30.2,74.4,31.8,74.4,33.5zM127.7,207c-5.4,0-9.8,5.1-9.8,11.3s4.4,11.3,9.8,11.3s9.8-5.1,9.8-11.3S133.2,207,127.7,207z"></path>
+				</g>
+			</svg>
+		</div>
+		<h1>Пожалуйста поверните экран</h1>
+	</div>
+	<div class="farewell">
+		<h1>Спасибо большое за игру!<br>Ждем вас снова!</h1>
+	</div>
+	<main class="game">
+		<section class="attr">
+			<div class="name_container">
+				<img src="/images/avatar.png" height="50">
+				<h2>Админ</h2>
+			</div>
+			<div class="counter_container">
+				<div class="counter__title">
+					<h3>Цифры</h3>
+					<img src="/images/angle-up-solid.svg">
+				</div>
+				<div class="counter__bar">
+					<div class="value" style="width: 0%;"></div>
+				</div>
+			</div>
+		</section>
+		<section class="button_container">
+			<button class="button num1">1</button>
+			<button class="button num2">2</button>
+			<button class="button num3">3</button>
+			<button class="button num4">4</button>
+			<button class="button num5">5</button>
+			<button class="button num6">6</button>
+			<button class="button num7">7</button>
+			<button class="button num8">8</button>
+			<button class="button num9">9</button>
+		</section>
+		<button class="start">Начать</button>
+	</main>
+
+	<audio class="introduction">
+		<source src="/sounds/introduction.mp3"/>
+	</audio>
+
+	<audio class="ah">
+		<source src="/sounds/ah.mp3" />
+	</audio>
+
+	<audio class="oh">
+		<source src="/sounds/oh.mp3" />
+	</audio>
+
+	<audio class="num 1">
+		<source src="/sounds/1_w.mp3" />
+	</audio>
+
+	<audio class="num 2">
+		<source src="/sounds/2_w.mp3" />
+	</audio>
+
+	<audio class="num 3">
+		<source src="/sounds/3_w.mp3" />
+	</audio>
+
+	<audio class="num 4">
+		<source src="/sounds/4_w.mp3" />
+	</audio>
+
+	<audio class="num 5">
+		<source src="/sounds/5_w.mp3" />
+	</audio>
+
+	<audio class="num 6">
+		<source src="/sounds/6_w.mp3" />
+	</audio>
+
+	<audio class="num 7">
+		<source src="/sounds/7_w.mp3" />
+	</audio>
+
+	<audio class="num 8">
+		<source src="/sounds/8_w.mp3" />
+	</audio>
+
+	<audio class="num 9">
+		<source src="/sounds/9_w.mp3" />
+	</audio>
+	
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
